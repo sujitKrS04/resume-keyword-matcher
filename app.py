@@ -97,6 +97,45 @@ def load_custom_css():
         color: #1e293b !important;
     }
     
+    /* Radio button custom styling */
+    .stRadio > div {
+        background: transparent !important;
+    }
+    
+    .stRadio div[role="radiogroup"] > label {
+        background: #ffffff !important;
+        border: 2px solid #e5e7eb !important;
+        border-radius: 8px !important;
+        padding: 0.75rem 1rem !important;
+        margin: 0.25rem 0 !important;
+        color: #1e293b !important;
+        cursor: pointer !important;
+        transition: all 0.2s ease !important;
+    }
+    
+    .stRadio div[role="radiogroup"] > label:hover {
+        background: #f0f9ff !important;
+        border-color: #0ea5e9 !important;
+    }
+    
+    /* Radio button circle */
+    .stRadio input[type="radio"] {
+        accent-color: #0ea5e9 !important;
+        width: 20px !important;
+        height: 20px !important;
+        cursor: pointer !important;
+    }
+    
+    /* Selected radio button */
+    .stRadio div[data-baseweb="radio"] > div:first-child {
+        border-color: #0ea5e9 !important;
+        background-color: #0ea5e9 !important;
+    }
+    
+    .stRadio div[data-baseweb="radio"] > div:first-child > div {
+        background-color: #ffffff !important;
+    }
+    
     /* File uploader text */
     .stFileUploader label, .stFileUploader span {
         color: #1e293b !important;
@@ -267,6 +306,38 @@ def load_custom_css():
         color: #1e293b !important;
     }
     
+    /* Drag and drop area */
+    .stFileUploader section {
+        background: #f8fafc !important;
+        border-radius: 8px !important;
+        border: 2px dashed #cbd5e1 !important;
+    }
+    
+    .stFileUploader section > div {
+        color: #1e293b !important;
+    }
+    
+    .stFileUploader section span {
+        color: #1e293b !important;
+    }
+    
+    .stFileUploader small {
+        color: #64748b !important;
+    }
+    
+    /* File uploader text inside drag area */
+    .stFileUploader [data-testid="stFileUploaderDropzone"] {
+        background: #f8fafc !important;
+    }
+    
+    .stFileUploader [data-testid="stFileUploaderDropzone"] span {
+        color: #1e293b !important;
+    }
+    
+    .stFileUploader [data-testid="stFileUploaderDropzoneInstructions"] {
+        color: #1e293b !important;
+    }
+    
     /* Text area styling */
     .stTextArea > div > div > textarea {
         border-radius: 8px;
@@ -330,6 +401,25 @@ def load_custom_css():
     input[type="password"] {
         background: #ffffff !important;
         color: #1e293b !important;
+    }
+    
+    /* Password visibility toggle */
+    .stTextInput button {
+        color: #64748b !important;
+        background: transparent !important;
+    }
+    
+    .stTextInput button:hover {
+        color: #0ea5e9 !important;
+    }
+    
+    /* Show/hide password icon */
+    button[kind="icon"] {
+        color: #64748b !important;
+    }
+    
+    button[kind="icon"]:hover {
+        color: #0ea5e9 !important;
     }
     
     /* Select box styling */
@@ -407,6 +497,14 @@ def load_custom_css():
     .stFileUploader button {
         background: #0ea5e9 !important;
         color: white !important;
+        border: none !important;
+        padding: 0.5rem 1.5rem !important;
+        border-radius: 6px !important;
+        font-weight: 600 !important;
+    }
+    
+    .stFileUploader button:hover {
+        background: #0284c7 !important;
     }
     
     /* Hide Streamlit branding */
