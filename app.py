@@ -740,45 +740,59 @@ def load_custom_css():
         }
     }
     
-    /* Dataframe styling */
-    .stDataFrame {
+    /* Dataframe styling - Force white background and black text */
+    .stDataFrame, [data-testid="stDataFrame"] {
         background: #ffffff !important;
     }
     
-    .stDataFrame table {
+    .stDataFrame table, [data-testid="stDataFrame"] table {
         background: #ffffff !important;
         color: #1e293b !important;
     }
     
-    .stDataFrame thead tr th {
+    .stDataFrame thead tr th, [data-testid="stDataFrame"] thead tr th {
         background: #f1f5f9 !important;
         color: #1e293b !important;
         font-weight: 600 !important;
         border-bottom: 2px solid #cbd5e1 !important;
     }
     
-    .stDataFrame tbody tr td {
+    .stDataFrame tbody tr td, [data-testid="stDataFrame"] tbody tr td {
         background: #ffffff !important;
         color: #1e293b !important;
         border-bottom: 1px solid #e5e7eb !important;
     }
     
-    .stDataFrame tbody tr:hover td {
+    .stDataFrame tbody tr:hover td, [data-testid="stDataFrame"] tbody tr:hover td {
         background: #f9fafb !important;
     }
     
-    /* Data grid */
-    [data-testid="stDataFrame"] {
-        background: #ffffff !important;
-    }
-    
-    [data-testid="stDataFrame"] div {
+    /* Data grid elements */
+    [data-testid="stDataFrame"] div, [data-testid="stDataFrame"] > div {
         background: #ffffff !important;
         color: #1e293b !important;
     }
     
+    /* Dataframe cells */
+    [data-testid="stDataFrame"] [role="gridcell"] {
+        background: #ffffff !important;
+        color: #1e293b !important;
+    }
+    
+    /* Dataframe headers */
+    [data-testid="stDataFrame"] [role="columnheader"] {
+        background: #f1f5f9 !important;
+        color: #1e293b !important;
+        font-weight: 600 !important;
+    }
+    
     /* Element container for dataframes */
     div[data-testid="element-container"] div[data-testid="stDataFrame"] {
+        background: #ffffff !important;
+    }
+    
+    /* Dataframe canvas/container */
+    div[data-testid="stDataFrame"] canvas {
         background: #ffffff !important;
     }
     </style>
@@ -1347,7 +1361,7 @@ def display_additional_features(
 
             # Display preview
             st.markdown("**Preview:**")
-            st.dataframe(df, width="stretch")
+            st.dataframe(df, use_container_width=True, height=200)
 
             # Download button
             st.download_button(
