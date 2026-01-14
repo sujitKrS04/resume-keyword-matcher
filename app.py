@@ -422,6 +422,29 @@ def load_custom_css():
         color: #0ea5e9 !important;
     }
     
+    /* Tooltip for password toggle */
+    div[role="tooltip"] {
+        background: #1e293b !important;
+        color: #ffffff !important;
+        padding: 0.5rem 1rem !important;
+        border-radius: 6px !important;
+        font-size: 0.875rem !important;
+    }
+    
+    /* Streamlit tooltip */
+    .stTooltipIcon {
+        color: #64748b !important;
+    }
+    
+    [data-baseweb="tooltip"] {
+        background: #1e293b !important;
+        color: #ffffff !important;
+    }
+    
+    [data-baseweb="tooltip"] div {
+        color: #ffffff !important;
+    }
+    
     /* Select box styling */
     .stSelectbox {
         color: #1e293b !important;
