@@ -89,10 +89,16 @@ def load_custom_css():
     /* Input fields */
     input, textarea, select {
         color: #1e293b !important;
+        background: #ffffff !important;
     }
     
     /* Radio buttons and checkboxes */
     .stRadio label, .stCheckbox label {
+        color: #1e293b !important;
+    }
+    
+    /* File uploader text */
+    .stFileUploader label, .stFileUploader span {
         color: #1e293b !important;
     }
     
@@ -230,8 +236,8 @@ def load_custom_css():
     /* Button styling */
     .stButton > button {
         width: 100%;
-        background: #0ea5e9;
-        color: white;
+        background: #0ea5e9 !important;
+        color: white !important;
         border: none;
         padding: 0.75rem 2rem;
         font-size: 1rem;
@@ -242,16 +248,23 @@ def load_custom_css():
     }
     
     .stButton > button:hover {
-        background: #0284c7;
+        background: #0284c7 !important;
         box-shadow: 0 4px 12px rgba(14, 165, 233, 0.2);
+        color: white !important;
     }
     
     /* File uploader styling */
     .stFileUploader > div {
-        background: #f9fafb;
+        background: #f9fafb !important;
         border-radius: 8px;
         padding: 1rem;
         border: 2px dashed #cbd5e1;
+        color: #1e293b !important;
+    }
+    
+    .stFileUploader > div > div {
+        background: #ffffff !important;
+        color: #1e293b !important;
     }
     
     /* Text area styling */
@@ -259,18 +272,20 @@ def load_custom_css():
         border-radius: 8px;
         border: 1px solid #cbd5e1;
         padding: 1rem;
-        background: #f9fafb;
+        background: #ffffff !important;
+        color: #1e293b !important;
     }
     
     .stTextArea > div > div > textarea:focus {
         border-color: #0ea5e9;
         box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
-        background: white;
+        background: #ffffff !important;
+        color: #1e293b !important;
     }
     
     /* Sidebar styling */
     section[data-testid="stSidebar"] {
-        background: #f8fafc;
+        background: #f8fafc !important;
         border-right: 1px solid #e2e8f0;
     }
     
@@ -285,8 +300,35 @@ def load_custom_css():
         color: #1e293b !important;
     }
     
+    /* Sidebar inputs */
+    section[data-testid="stSidebar"] input,
+    section[data-testid="stSidebar"] select,
+    section[data-testid="stSidebar"] textarea {
+        background: #ffffff !important;
+        color: #1e293b !important;
+        border: 1px solid #cbd5e1 !important;
+    }
+    
     /* Main content text colors */
     .stApp p, .stApp span, .stApp label {
+        color: #1e293b !important;
+    }
+    
+    /* Text input fields */
+    .stTextInput > div > div > input {
+        background: #ffffff !important;
+        color: #1e293b !important;
+        border: 1px solid #cbd5e1 !important;
+    }
+    
+    .stTextInput label {
+        color: #1e293b !important;
+        font-weight: 600 !important;
+    }
+    
+    /* Password input */
+    input[type="password"] {
+        background: #ffffff !important;
         color: #1e293b !important;
     }
     
@@ -300,6 +342,47 @@ def load_custom_css():
         font-weight: 600 !important;
     }
     
+    .stSelectbox > div > div {
+        background: #ffffff !important;
+        color: #1e293b !important;
+    }
+    
+    .stSelectbox select {
+        background: #ffffff !important;
+        color: #1e293b !important;
+    }
+    
+    /* Dropdown menu options */
+    div[role="listbox"] {
+        background: #ffffff !important;
+        color: #1e293b !important;
+    }
+    
+    div[role="option"] {
+        background: #ffffff !important;
+        color: #1e293b !important;
+    }
+    
+    div[role="option"]:hover {
+        background: #f0f9ff !important;
+        color: #0369a1 !important;
+    }
+    
+    /* Radio buttons */
+    .stRadio > div {
+        background: transparent !important;
+    }
+    
+    .stRadio label {
+        color: #1e293b !important;
+    }
+    
+    /* File uploader button */
+    .stFileUploader button {
+        background: #0ea5e9 !important;
+        color: white !important;
+    }
+    
     /* Hide Streamlit branding */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
@@ -307,20 +390,25 @@ def load_custom_css():
     /* Tabs */
     .stTabs [data-baseweb="tab-list"] {
         gap: 8px;
-        background: white;
+        background: white !important;
     }
     
     .stTabs [data-baseweb="tab"] {
-        background: #f1f5f9;
+        background: #f1f5f9 !important;
         border-radius: 8px;
-        color: #475569;
+        color: #475569 !important;
         border: 1px solid #cbd5e1;
     }
     
     .stTabs [aria-selected="true"] {
-        background: #0ea5e9;
-        color: white;
+        background: #0ea5e9 !important;
+        color: white !important;
         border-color: #0ea5e9;
+    }
+    
+    .stTabs [data-baseweb="tab"]:hover {
+        background: #e0f2fe !important;
+        color: #0369a1 !important;
     }
     
     /* Animation */
