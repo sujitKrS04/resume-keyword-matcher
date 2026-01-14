@@ -558,6 +558,63 @@ def load_custom_css():
         color: #0369a1 !important;
     }
     
+    /* Expander styling */
+    .streamlit-expanderHeader {
+        background: #f8fafc !important;
+        color: #1e293b !important;
+        border-radius: 8px !important;
+        padding: 0.75rem 1rem !important;
+        font-weight: 600 !important;
+    }
+    
+    .streamlit-expanderHeader:hover {
+        background: #f0f9ff !important;
+        color: #0369a1 !important;
+    }
+    
+    details summary {
+        color: #1e293b !important;
+        background: #f8fafc !important;
+        padding: 0.75rem 1rem !important;
+        border-radius: 8px !important;
+    }
+    
+    details summary:hover {
+        background: #f0f9ff !important;
+        color: #0369a1 !important;
+    }
+    
+    details[open] summary {
+        color: #0369a1 !important;
+        background: #f0f9ff !important;
+    }
+    
+    /* Expander content */
+    .streamlit-expanderContent {
+        background: #ffffff !important;
+        color: #1e293b !important;
+    }
+    
+    details div {
+        color: #1e293b !important;
+    }
+    
+    /* Sidebar expanders */
+    section[data-testid="stSidebar"] details summary {
+        color: #1e293b !important;
+        background: #ffffff !important;
+    }
+    
+    section[data-testid="stSidebar"] details summary:hover {
+        background: #f0f9ff !important;
+        color: #0369a1 !important;
+    }
+    
+    section[data-testid="stSidebar"] details[open] summary {
+        background: #f0f9ff !important;
+        color: #0369a1 !important;
+    }
+    
     /* Animation */
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(20px); }
