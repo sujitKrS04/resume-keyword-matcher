@@ -1644,6 +1644,7 @@ def sidebar_content():
             type="password",
             value=api_key_default,
             help=api_key_help,
+            placeholder="your_gemini_api_key_here"
         )
 
         if api_key:
