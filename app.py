@@ -405,23 +405,28 @@ def load_custom_css():
     
     /* Password visibility toggle */
     .stTextInput button {
-        background: transparent !important;
-        border: none !important;
-        color: #64748b !important;
+        background: #ffffff !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 6px !important;
+        color: #1e293b !important;
+        padding: 0.5rem !important;
+        margin-left: 0.25rem !important;
     }
     
     .stTextInput button:hover {
-        color: #0ea5e9 !important;
+        background: #0ea5e9 !important;
+        border-color: #0ea5e9 !important;
+        color: #ffffff !important;
     }
     
     .stTextInput button svg {
-        color: #64748b !important;
-        fill: #64748b !important;
+        color: #1e293b !important;
+        fill: #1e293b !important;
     }
     
     .stTextInput button:hover svg {
-        color: #0ea5e9 !important;
-        fill: #0ea5e9 !important;
+        color: #ffffff !important;
+        fill: #ffffff !important;
     }
     
     /* Remove any container backgrounds */
@@ -430,7 +435,14 @@ def load_custom_css():
     }
     
     .stTextInput [data-baseweb="input"] button {
-        background: transparent !important;
+        background: #ffffff !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 6px !important;
+    }
+    
+    .stTextInput [data-baseweb="input"] button:hover {
+        background: #0ea5e9 !important;
+        border-color: #0ea5e9 !important;
     }
     
     /* Tooltip for password toggle */
