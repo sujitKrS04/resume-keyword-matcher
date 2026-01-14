@@ -1359,9 +1359,45 @@ def display_additional_features(
             df.to_csv(csv_buffer, index=False)
             csv_data = csv_buffer.getvalue()
 
-            # Display preview
+            # Display preview with HTML table for better styling
             st.markdown("**Preview:**")
-            st.dataframe(df, use_container_width=True, height=200)
+            
+            # Create HTML table with explicit styling
+            html_table = df.to_html(index=False, escape=False, border=0)
+            styled_html = f"""
+            <div style="overflow-x: auto; background: white; padding: 1rem; border-radius: 8px; border: 1px solid #e5e7eb;">
+                <style>
+                    .preview-table {{
+                        width: 100%;
+                        border-collapse: collapse;
+                        background: #ffffff !important;
+                    }}
+                    .preview-table thead tr {{
+                        background: #f1f5f9 !important;
+                        border-bottom: 2px solid #cbd5e1;
+                    }}
+                    .preview-table th {{
+                        padding: 12px;
+                        text-align: left;
+                        font-weight: 600;
+                        color: #1e293b !important;
+                        background: #f1f5f9 !important;
+                        border-bottom: 2px solid #cbd5e1;
+                    }}
+                    .preview-table td {{
+                        padding: 12px;
+                        color: #1e293b !important;
+                        background: #ffffff !important;
+                        border-bottom: 1px solid #e5e7eb;
+                    }}
+                    .preview-table tbody tr:hover {{
+                        background: #f9fafb !important;
+                    }}
+                </style>
+                {html_table.replace('<table', '<table class="preview-table"')}
+            </div>
+            """
+            st.markdown(styled_html, unsafe_allow_html=True)
 
             # Download button
             st.download_button(
