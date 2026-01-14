@@ -405,49 +405,71 @@ def load_custom_css():
     
     /* Password visibility toggle */
     .stTextInput button {
-        color: #64748b !important;
-        background: #2d3748 !important;
-        border-radius: 4px !important;
-        padding: 0.25rem !important;
+        color: #1e293b !important;
+        background: #ffffff !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 6px !important;
+        padding: 0.5rem !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        min-width: 40px !important;
+        min-height: 40px !important;
     }
     
     .stTextInput button:hover {
-        color: #ffffff !important;
-        background: #0ea5e9 !important;
+        color: #0ea5e9 !important;
+        background: #f0f9ff !important;
+        border-color: #0ea5e9 !important;
     }
     
     /* Show/hide password icon */
     button[kind="icon"] {
-        color: #64748b !important;
-        background: #2d3748 !important;
-        padding: 0.25rem !important;
-        border-radius: 4px !important;
+        color: #1e293b !important;
+        background: #ffffff !important;
+        border: 1px solid #cbd5e1 !important;
+        padding: 0.5rem !important;
+        border-radius: 6px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        min-width: 40px !important;
+        min-height: 40px !important;
     }
     
     button[kind="icon"]:hover {
-        color: #ffffff !important;
-        background: #0ea5e9 !important;
+        color: #0ea5e9 !important;
+        background: #f0f9ff !important;
+        border-color: #0ea5e9 !important;
     }
     
     /* Icon SVG styling */
     .stTextInput button svg {
-        color: #94a3b8 !important;
-        fill: #94a3b8 !important;
+        color: #1e293b !important;
+        fill: #1e293b !important;
+        width: 20px !important;
+        height: 20px !important;
+        display: block !important;
+        margin: auto !important;
     }
     
     .stTextInput button:hover svg {
-        color: #ffffff !important;
-        fill: #ffffff !important;
+        color: #0ea5e9 !important;
+        fill: #0ea5e9 !important;
     }
     
     button[kind="icon"] svg {
-        color: #94a3b8 !important;
-        fill: #94a3b8 !important;
+        color: #1e293b !important;
+        fill: #1e293b !important;
+        width: 20px !important;
+        height: 20px !important;
+        display: block !important;
+        margin: auto !important;
     }
     
     button[kind="icon"]:hover svg {
-        color: #ffffff !important;
-        fill: #ffffff !important;
+        color: #0ea5e9 !important;
+        fill: #0ea5e9 !important;
     }
     
     /* Tooltip for password toggle */
