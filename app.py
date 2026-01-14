@@ -406,16 +406,18 @@ def load_custom_css():
     /* Password visibility toggle */
     .stTextInput button {
         background: #ffffff !important;
-        border: 1px solid #cbd5e1 !important;
-        border-radius: 6px !important;
+        border: none !important;
+        border-left: 1px solid #cbd5e1 !important;
+        border-radius: 0 8px 8px 0 !important;
         color: #1e293b !important;
-        padding: 0.5rem !important;
-        margin-left: 0.25rem !important;
+        padding: 0.75rem !important;
+        margin: 0 !important;
+        height: 100% !important;
     }
     
     .stTextInput button:hover {
         background: #0ea5e9 !important;
-        border-color: #0ea5e9 !important;
+        border-left-color: #0ea5e9 !important;
         color: #ffffff !important;
     }
     
@@ -429,20 +431,27 @@ def load_custom_css():
         fill: #ffffff !important;
     }
     
-    /* Remove any container backgrounds */
+    /* Input field adjustment */
+    .stTextInput input {
+        border-radius: 8px 0 0 8px !important;
+    }
+    
+    /* Remove container backgrounds */
     .stTextInput div[data-baseweb="base-input"] > div:last-child {
         background: transparent !important;
     }
     
     .stTextInput [data-baseweb="input"] button {
         background: #ffffff !important;
-        border: 1px solid #cbd5e1 !important;
-        border-radius: 6px !important;
+        border: none !important;
+        border-left: 1px solid #cbd5e1 !important;
+        border-radius: 0 8px 8px 0 !important;
+        margin: 0 !important;
     }
     
     .stTextInput [data-baseweb="input"] button:hover {
         background: #0ea5e9 !important;
-        border-color: #0ea5e9 !important;
+        border-left-color: #0ea5e9 !important;
     }
     
     /* Tooltip for password toggle */
