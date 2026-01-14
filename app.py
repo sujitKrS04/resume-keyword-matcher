@@ -361,11 +361,37 @@ def load_custom_css():
     div[role="option"] {
         background: #ffffff !important;
         color: #1e293b !important;
+        padding: 0.5rem 1rem !important;
     }
     
     div[role="option"]:hover {
         background: #f0f9ff !important;
         color: #0369a1 !important;
+    }
+    
+    /* Selectbox dropdown */
+    ul[role="listbox"] {
+        background: #ffffff !important;
+    }
+    
+    li[role="option"] {
+        background: #ffffff !important;
+        color: #1e293b !important;
+    }
+    
+    li[role="option"]:hover {
+        background: #f0f9ff !important;
+        color: #0369a1 !important;
+    }
+    
+    /* Dropdown container */
+    div[data-baseweb="popover"] {
+        background: #ffffff !important;
+    }
+    
+    div[data-baseweb="select"] > div {
+        background: #ffffff !important;
+        color: #1e293b !important;
     }
     
     /* Radio buttons */
