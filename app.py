@@ -420,13 +420,13 @@ def load_custom_css():
         align-items: center !important;
         justify-content: center !important;
         flex-shrink: 0 !important;
+        cursor: pointer !important;
     }
     
     .stTextInput button:hover {
-        background: #0ea5e9 !important;
-        border-left-color: #0ea5e9 !important;
-        color: #ffffff !important;
-        width: 60px !important;
+        background: #ffffff !important;
+        border-left-color: #e5e7eb !important;
+        color: #1e293b !important;
     }
     
     .stTextInput button svg {
@@ -438,8 +438,8 @@ def load_custom_css():
     }
     
     .stTextInput button:hover svg {
-        color: #ffffff !important;
-        fill: #ffffff !important;
+        color: #1e293b !important;
+        fill: #1e293b !important;
     }
     
     /* Input field adjustment */
@@ -488,9 +488,8 @@ def load_custom_css():
     }
     
     .stTextInput [data-baseweb="input"] button:hover {
-        background: #0ea5e9 !important;
-        border-left-color: #0ea5e9 !important;
-        width: 60px !important;
+        background: #ffffff !important;
+        border-left-color: #e5e7eb !important;
     }
     
     /* Tooltip for password toggle */
