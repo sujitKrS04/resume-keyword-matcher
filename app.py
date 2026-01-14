@@ -739,6 +739,48 @@ def load_custom_css():
             color: #f1f5f9;
         }
     }
+    
+    /* Dataframe styling */
+    .stDataFrame {
+        background: #ffffff !important;
+    }
+    
+    .stDataFrame table {
+        background: #ffffff !important;
+        color: #1e293b !important;
+    }
+    
+    .stDataFrame thead tr th {
+        background: #f1f5f9 !important;
+        color: #1e293b !important;
+        font-weight: 600 !important;
+        border-bottom: 2px solid #cbd5e1 !important;
+    }
+    
+    .stDataFrame tbody tr td {
+        background: #ffffff !important;
+        color: #1e293b !important;
+        border-bottom: 1px solid #e5e7eb !important;
+    }
+    
+    .stDataFrame tbody tr:hover td {
+        background: #f9fafb !important;
+    }
+    
+    /* Data grid */
+    [data-testid="stDataFrame"] {
+        background: #ffffff !important;
+    }
+    
+    [data-testid="stDataFrame"] div {
+        background: #ffffff !important;
+        color: #1e293b !important;
+    }
+    
+    /* Element container for dataframes */
+    div[data-testid="element-container"] div[data-testid="stDataFrame"] {
+        background: #ffffff !important;
+    }
     </style>
     """
     st.markdown(css, unsafe_allow_html=True)
@@ -1644,7 +1686,7 @@ def sidebar_content():
             type="password",
             value=api_key_default,
             help=api_key_help,
-            placeholder="your_gemini_api_key_here"
+            placeholder="your_gemini_api_key_here",
         )
 
         if api_key:
