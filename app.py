@@ -167,18 +167,23 @@ def load_custom_css():
     
     /* Card styling */
     .custom-card {
-        background: #f9fafb;
-        padding: 2rem;
+        background: #ffffff !important;
+        padding: 1.5rem 2rem !important;
         border-radius: 12px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         border: 1px solid #e5e7eb;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
+        color: #1e293b !important;
     }
     
     .custom-card:hover {
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    
+    .custom-card strong {
+        color: #1e293b !important;
     }
     
     /* Score display */
@@ -275,11 +280,11 @@ def load_custom_css():
     /* Button styling */
     .stButton > button {
         width: 100%;
-        background: #0ea5e9 !important;
-        color: white !important;
-        border: none;
-        padding: 0.75rem 2rem;
-        font-size: 1rem;
+        background: #f1f5f9 !important;
+        color: #1e293b !important;
+        border: 1px solid #cbd5e1 !important;
+        padding: 0.875rem 2.5rem !important;
+        font-size: 1.05rem !important;
         font-weight: 600;
         border-radius: 8px;
         cursor: pointer;
@@ -287,9 +292,32 @@ def load_custom_css():
     }
     
     .stButton > button:hover {
-        background: #0284c7 !important;
-        box-shadow: 0 4px 12px rgba(14, 165, 233, 0.2);
-        color: white !important;
+        background: #e0f2fe !important;
+        border-color: #0ea5e9 !important;
+        color: #0369a1 !important;
+        box-shadow: 0 4px 12px rgba(14, 165, 233, 0.15);
+    }
+    
+    /* Download button styling */
+    .stDownloadButton > button {
+        width: 100%;
+        background: #ffffff !important;
+        color: #1e293b !important;
+        border: 1px solid #cbd5e1 !important;
+        padding: 0.875rem 2.5rem !important;
+        font-size: 1.05rem !important;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .stDownloadButton > button:hover {
+        background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%) !important;
+        border-color: #0ea5e9 !important;
+        color: #1e293b !important;
+        box-shadow: 0 4px 16px rgba(14, 165, 233, 0.25);
+        transform: translateY(-1px);
     }
     
     /* File uploader styling */
