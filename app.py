@@ -406,20 +406,48 @@ def load_custom_css():
     /* Password visibility toggle */
     .stTextInput button {
         color: #64748b !important;
-        background: transparent !important;
+        background: #2d3748 !important;
+        border-radius: 4px !important;
+        padding: 0.25rem !important;
     }
     
     .stTextInput button:hover {
-        color: #0ea5e9 !important;
+        color: #ffffff !important;
+        background: #0ea5e9 !important;
     }
     
     /* Show/hide password icon */
     button[kind="icon"] {
         color: #64748b !important;
+        background: #2d3748 !important;
+        padding: 0.25rem !important;
+        border-radius: 4px !important;
     }
     
     button[kind="icon"]:hover {
-        color: #0ea5e9 !important;
+        color: #ffffff !important;
+        background: #0ea5e9 !important;
+    }
+    
+    /* Icon SVG styling */
+    .stTextInput button svg {
+        color: #94a3b8 !important;
+        fill: #94a3b8 !important;
+    }
+    
+    .stTextInput button:hover svg {
+        color: #ffffff !important;
+        fill: #ffffff !important;
+    }
+    
+    button[kind="icon"] svg {
+        color: #94a3b8 !important;
+        fill: #94a3b8 !important;
+    }
+    
+    button[kind="icon"]:hover svg {
+        color: #ffffff !important;
+        fill: #ffffff !important;
     }
     
     /* Tooltip for password toggle */
