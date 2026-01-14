@@ -407,12 +407,16 @@ def load_custom_css():
     .stTextInput button {
         background: #ffffff !important;
         border: none !important;
-        border-left: 1px solid #cbd5e1 !important;
+        border-left: 1px solid #e5e7eb !important;
         border-radius: 0 8px 8px 0 !important;
         color: #1e293b !important;
-        padding: 0.75rem !important;
+        padding: 0 !important;
         margin: 0 !important;
         height: 100% !important;
+        min-width: 50px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
     
     .stTextInput button:hover {
@@ -424,6 +428,8 @@ def load_custom_css():
     .stTextInput button svg {
         color: #1e293b !important;
         fill: #1e293b !important;
+        width: 20px !important;
+        height: 20px !important;
     }
     
     .stTextInput button:hover svg {
@@ -436,17 +442,41 @@ def load_custom_css():
         border-radius: 8px 0 0 8px !important;
     }
     
+    /* Input wrapper - remove any dark backgrounds */
+    .stTextInput > div > div {
+        background: #ffffff !important;
+        border-radius: 8px !important;
+    }
+    
+    .stTextInput div[data-baseweb="input"] {
+        background: #ffffff !important;
+        border-radius: 8px !important;
+    }
+    
+    .stTextInput div[data-baseweb="base-input"] {
+        background: #ffffff !important;
+        border-radius: 8px !important;
+    }
+    
+    .stTextInput div[data-baseweb="base-input"] > div {
+        background: #ffffff !important;
+    }
+    
     /* Remove container backgrounds */
     .stTextInput div[data-baseweb="base-input"] > div:last-child {
-        background: transparent !important;
+        background: #ffffff !important;
     }
     
     .stTextInput [data-baseweb="input"] button {
         background: #ffffff !important;
         border: none !important;
-        border-left: 1px solid #cbd5e1 !important;
+        border-left: 1px solid #e5e7eb !important;
         border-radius: 0 8px 8px 0 !important;
         margin: 0 !important;
+        min-width: 50px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
     
     .stTextInput [data-baseweb="input"] button:hover {
