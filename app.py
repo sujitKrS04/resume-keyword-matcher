@@ -405,54 +405,18 @@ def load_custom_css():
     
     /* Password visibility toggle */
     .stTextInput button {
-        color: #64748b !important;
         background: transparent !important;
         border: none !important;
-        border-radius: 0 !important;
-        padding: 0.5rem !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        min-width: 36px !important;
-        min-height: 36px !important;
-        position: absolute !important;
-        right: 4px !important;
-        top: 50% !important;
-        transform: translateY(-50%) !important;
+        color: #64748b !important;
     }
     
     .stTextInput button:hover {
         color: #0ea5e9 !important;
-        background: transparent !important;
     }
     
-    /* Show/hide password icon */
-    button[kind="icon"] {
-        color: #64748b !important;
-        background: transparent !important;
-        border: none !important;
-        padding: 0.5rem !important;
-        border-radius: 0 !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        min-width: 36px !important;
-        min-height: 36px !important;
-    }
-    
-    button[kind="icon"]:hover {
-        color: #0ea5e9 !important;
-        background: transparent !important;
-    }
-    
-    /* Icon SVG styling */
     .stTextInput button svg {
         color: #64748b !important;
         fill: #64748b !important;
-        width: 20px !important;
-        height: 20px !important;
-        display: block !important;
-        margin: auto !important;
     }
     
     .stTextInput button:hover svg {
@@ -460,23 +424,13 @@ def load_custom_css():
         fill: #0ea5e9 !important;
     }
     
-    button[kind="icon"] svg {
-        color: #64748b !important;
-        fill: #64748b !important;
-        width: 20px !important;
-        height: 20px !important;
-        display: block !important;
-        margin: auto !important;
+    /* Remove any container backgrounds */
+    .stTextInput div[data-baseweb="base-input"] > div:last-child {
+        background: transparent !important;
     }
     
-    button[kind="icon"]:hover svg {
-        color: #0ea5e9 !important;
-        fill: #0ea5e9 !important;
-    }
-    
-    /* Text input container for proper positioning */
-    .stTextInput > div {
-        position: relative !important;
+    .stTextInput [data-baseweb="input"] button {
+        background: transparent !important;
     }
     
     /* Tooltip for password toggle */
