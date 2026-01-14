@@ -64,6 +64,7 @@ def load_custom_css():
     
     .stApp {
         background: #ffffff !important;
+        color: #1e293b !important;
     }
     
     [data-testid="stAppViewContainer"] {
@@ -72,6 +73,27 @@ def load_custom_css():
     
     [data-testid="stHeader"] {
         background: #ffffff !important;
+    }
+    
+    /* Force all text to be visible */
+    .stApp * {
+        color: #1e293b !important;
+    }
+    
+    .stApp label {
+        color: #1e293b !important;
+        font-weight: 600 !important;
+        font-size: 0.95rem !important;
+    }
+    
+    /* Input fields */
+    input, textarea, select {
+        color: #1e293b !important;
+    }
+    
+    /* Radio buttons and checkboxes */
+    .stRadio label, .stCheckbox label {
+        color: #1e293b !important;
     }
     
     /* Hero section */
@@ -253,20 +275,34 @@ def load_custom_css():
     }
     
     section[data-testid="stSidebar"] .stMarkdown {
-        color: #1e293blinear-gradient(180deg, #667eea 0%, #764ba2 100%);
-        color: white;
+        color: #1e293b !important;
     }
     
-    section[data-testid="stSidebar"] .stMarkdown {
-        color: white;
+    section[data-testid="stSidebar"] h1,
+    section[data-testid="stSidebar"] h2,
+    section[data-testid="stSidebar"] h3,
+    section[data-testid="stSidebar"] p {
+        color: #1e293b !important;
     }
     
-    /* Hide Streamli#f1f5f9;
-        color: #0c4a6e;
-        border-radius: 8px;
-        font-weight: 600;
-        border: 1px solid #cbd5e1;
+    /* Main content text colors */
+    .stApp p, .stApp span, .stApp label {
+        color: #1e293b !important;
     }
+    
+    /* Select box styling */
+    .stSelectbox {
+        color: #1e293b !important;
+    }
+    
+    .stSelectbox label {
+        color: #1e293b !important;
+        font-weight: 600 !important;
+    }
+    
+    /* Hide Streamlit branding */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
     
     /* Tabs */
     .stTabs [data-baseweb="tab-list"] {
